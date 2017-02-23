@@ -20,7 +20,7 @@ dude is just a simple wrapper for the man command, so just
 use it with the arguments you would pass to man.
 
 ```sh
-$ mang man
+$ dude man
 NAME
 SYNOPSIS
 DESCRIPTION
@@ -39,7 +39,7 @@ FILES
 SEE ALSO
 HISTORY
 
-$ mang 7 man
+$ dude 7 man
 NAME
 SYNOPSIS
 DESCRIPTION
@@ -59,6 +59,27 @@ NOTES
 BUGS
 SEE ALSO
 COLOPHON
+
+# Print a section by name. Case insensitive.
+$ dude bash files
+FILES
+       /bin/bash
+              The bash executable
+       /etc/profile
+              The  systemwide  initialization  file, executed
+              for login shells
+       ~/.bash_profile
+              The personal initialization file, executed  for
+              login shells
+       ~/.bashrc
+              The  individual  per-interactive-shell  startup
+              file
+       ~/.bash_logout
+              The individual login shell cleanup  file,  exe‐
+              cuted when a login shell exits
+       ~/.inputrc
+              Individual readline initialization file
+
 ```
 
 # License
