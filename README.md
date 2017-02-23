@@ -1,19 +1,22 @@
-# mang
+# dude
 
 Ever wanted a quick overview of man page contents?
 
-I got you mang!
+Dude, I got you!
 
+**NOTE: This is pre-alpha software. Several
+features are not yet fully implemented.**
 
 ## Install
 
-Download the script, make it executable, move it somewhere
-in your PATH.
+```
+go get -v github.com/qjcg/dude
+```
 
 
 ## Usage
 
-mang is just a simple wrapper for the man command, so just
+dude is just a simple wrapper for the man command, so just
 use it with the arguments you would pass to man.
 
 ```sh
@@ -57,3 +60,7 @@ BUGS
 SEE ALSO
 COLOPHON
 ```
+
+# License
+
+MIT.
