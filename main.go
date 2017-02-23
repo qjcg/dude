@@ -67,9 +67,9 @@ func main() {
 	scanner := bufio.NewScanner(bytes.NewBuffer(out))
 	for scanner.Scan() {
 		b := scanner.Bytes()
-		lineIsHeading := Heading.Match(b) && !NotHeading.Match(b)
 
-		if lineIsHeading {
+		// Line is a heading.
+		if Heading.Match(b) && !NotHeading.Match(b) {
 
 			// We set printSection to true the FIRST time a heading is
 			// seen, so this conditional will be true ONLY when we
