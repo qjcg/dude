@@ -1,0 +1,20 @@
+[package]
+name = "dude"
+version = "0.2.0"
+author = "John Gosset <john@gossetx.com>"
+description = "Print man page table of contents or named sections"
+architecture = "x86_64"
+
+[[file]]
+path = "/usr/bin/dude"
+contentFrom = "./dude"
+mode = "0755"
+owner = "root"
+group = "root"
+
+[[file]]
+path = "/usr/share/man/man1/dude.1.gz"
+contentFrom = "./dude.1.gz"
+mode = "0644"
+owner = "root"
+group = "root"
