@@ -92,7 +92,7 @@ func main() {
 		} else {
 
 			// When the line is not a heading and we're not
-			// printing heading contents, do nothing.
+			// printing heading contents, move on to next line.
 			if !printHeadingContents {
 				continue
 			}
